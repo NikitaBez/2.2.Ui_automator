@@ -39,6 +39,9 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      - name: Install Android API level 29
+        run: sdkmanager "system-images;android-29;default;x86"
+
       - name: run tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
