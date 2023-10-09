@@ -45,13 +45,13 @@ class ChangeTextTest {
         device.wait(Until.hasObject(By.pkg(launcherPackage)), TIMEOUT)
     }
 
-    @After
-    fun afterEachTest() {
-        device.pressHome()
-        device.waitForIdle()
-
-        device.executeShellCommand("am force-stop $MODEL_PACKAGE")
-    }
+//    @After
+//    fun afterEachTest() {
+//        device.pressHome()
+//        device.waitForIdle()
+//
+//        device.executeShellCommand("am force-stop $MODEL_PACKAGE")
+//    }
 
 
     @Test
